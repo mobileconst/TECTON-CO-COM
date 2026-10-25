@@ -28,107 +28,185 @@
     @media(max-width:430px){.container{width:min(100% - 28px,1160px)}h1{font-size:42px}.hero-buttons .btn{width:100%}.hero-stats{display:grid;grid-template-columns:1fr 1fr}.trust-item{gap:8px}.trust-icon{width:34px;height:34px}.process-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}.cta-panel .btn{width:100%}}
   
     /* TECTON & CO. — Natural Earthy Design */
-    :root {
-      --ink: #29332c;
-      --muted: #6c7469;
-      --paper: #f5f2e9;
-      --line: #e5dfd2;
-      --white: #fffdf8;
-      --radius: 18px;
-      --shadow: 0 14px 36px rgba(48, 55, 42, 0.09);
-    }
+:root {
+  --ink: #29332c;
+  --muted: #6c7469;
+  --paper: #f5f2e9;
+  --white: #fffdf8;
+  --line: #e5dfd2;
+  --radius: 18px;
+  --shadow: 0 14px 36px rgba(48, 55, 42, 0.09);
+  --earth-green: #526b48;
+  --deep-green: #263b30;
+  --soft-green: #e9eee3;
+}
 
-    body {
-      background: #fbfaf6;
-      color: var(--ink);
-    }
+body {
+  background: #fbfaf6;
+  color: var(--ink);
+}
 
-    header {
-      background: rgba(251, 250, 246, 0.96);
-      border-bottom-color: #e5dfd2;
-    }
+header {
+  background: rgba(251, 250, 246, 0.97);
+  border-bottom-color: var(--line);
+}
 
-    .services,
-    .contact {
-      background: var(--paper);
-    }
+.nav-links {
+  color: #39473b;
+}
+/* Natural colors for navigation and supporting sections */
+.topbar {
+  background: #263b30;
+}
 
-    .service-card,
-    .contact-form {
-      background: var(--white);
-      border-color: var(--line);
-    }
+.trust-strip {
+  background: #405642;
+}
 
-    .service-card:hover {
-      border-color: #b9c5a9;
-      box-shadow: var(--shadow);
-    }
+.menu-toggle {
+  color: #263b30;
+}
+.nav-links a:hover,
+.text-link {
+  color: var(--earth-green);
+}
 
-    .service-icon {
-      background: #e9eee3;
-      color: #526b48;
-    }
+.nav-links.open {
+  background: var(--white);
+  border-top-color: var(--line);
+}
 
-    .text-link {
-      color: #526b48;
-    }
+.menu-toggle {
+  color: var(--deep-green);
+}
 
-    .about-visual img {
-      border-radius: 20px;
-      box-shadow: var(--shadow);
-    }
+.btn-outline {
+  background: var(--white);
+  border-color: #d8dccc;
+  color: var(--deep-green);
+}
 
-    .project-card {
-      border-radius: 18px;
-    }
+.services,
+.contact {
+  background: var(--paper);
+}
 
-    .field input,
-    .field select,
-    .field textarea {
-      background: #fffdf8;
-      border-color: #ddd8cb;
-    }
+.service-card,
+.contact-form {
+  background: var(--white);
+  border-color: var(--line);
+}
 
-    .field input:focus,
-    .field select:focus,
-    .field textarea:focus {
-      border-color: #718568;
-    }
+.service-card:hover {
+  border-color: #b9c5a9;
+  box-shadow: var(--shadow);
+}
 
-    footer {
-      background: #263b30;
-      color: #f5f2e9;
-    }
+.service-icon {
+  background: var(--soft-green);
+  color: var(--earth-green);
+}
 
-    footer p,
-    footer a {
-      color: #d0d9ce;
-    }
+.about-visual img {
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
 
-    footer h4,
-    .footer-brand {
-      color: #fffdf8;
-    }
+.experience-card {
+  background: #dce4d2;
+  color: var(--deep-green);
+}
 
-    .socials a {
-      border-color: #687c6b;
-    }
+.project-card {
+  border-radius: var(--radius);
+  background: #e6e4d8;
+}
 
-    .socials a:hover {
-      background: #526b48;
-      border-color: #526b48;
-    }
+.process {
+  background: #33483a;
+}
 
-    .hero {
-      background-image:
-        linear-gradient(
-          90deg,
-          rgba(35, 52, 42, 0.94),
-          rgba(35, 52, 42, 0.72) 48%,
-          rgba(35, 52, 42, 0.18)
-        ),
-        url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85');
-    }
+.process .section-head p,
+.process-card p {
+  color: #d4ded2;
+}
+
+.process-card {
+  border-top-color: #ffffff40;
+}
+
+.cta-panel {
+  background: linear-gradient(115deg, #526b48, #263b30);
+}
+
+.contact-details {
+  background: #33483a;
+}
+
+.field input,
+.field select,
+.field textarea {
+  background: var(--white);
+  border-color: #ddd8cb;
+  color: var(--ink);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+  border-color: #718568;
+}
+
+footer {
+  background: #263b30;
+  color: #f5f2e9;
+}
+
+footer p,
+footer a {
+  color: #d0d9ce;
+}
+
+footer h4,
+.footer-brand {
+  color: var(--white);
+}
+
+.socials a {
+  border-color: #687c6b;
+}
+
+.socials a:hover {
+  background: var(--earth-green);
+  border-color: var(--earth-green);
+}
+
+.hero {
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(35, 52, 42, 0.94),
+      rgba(35, 52, 42, 0.72) 48%,
+      rgba(35, 52, 42, 0.18)
+    ),
+    url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85');
+}
+
+/* Keep the mobile layout comfortable */
+@media (max-width: 760px) {
+  .nav-links.open {
+    box-shadow: 0 18px 25px rgba(48, 55, 42, 0.10);
+  }
+
+  .experience-card {
+    right: 12px;
+  }
+
+  .contact-details,
+  .contact-form {
+    border-radius: 18px;
+  }
+}
 
   </style>
 </head>
