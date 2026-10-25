@@ -26,6 +26,110 @@
     @media(max-width:980px){.nav-links{gap:14px}.brand img{width:60px}.brand-word{font-size:17px}.service-grid{grid-template-columns:repeat(2,1fr)}.project-grid{grid-template-columns:1fr 1fr}.project-card:first-child{grid-column:1/-1;min-height:300px}.about-grid{gap:35px}.footer-grid{grid-template-columns:1fr 1fr}}
     @media(max-width:760px){.topbar .container{justify-content:center}.topbar .top-right{display:none}.nav{height:72px}.nav-links{display:none;position:absolute;left:0;right:0;top:72px;background:#fff;padding:18px 22px 24px;box-shadow:0 18px 25px #10274618;flex-direction:column;align-items:flex-start;border-top:1px solid var(--line)}.nav-links.open{display:flex}.nav-actions .btn{display:none}.menu-toggle{display:block}.brand img{width:52px;height:46px}.brand-word{font-size:16px}.brand-tag{font-size:8px}.hero{min-height:650px;background-position:58% center}.hero-inner{padding:75px 0}.hero p{font-size:15px}.hero-stats{gap:18px}.trust-grid{grid-template-columns:1fr 1fr}.trust-item{border-bottom:1px solid #ffffff20}.trust-item:nth-child(2){border-right:0}.trust-item:nth-child(3),.trust-item:nth-child(4){border-bottom:0}.trust-item{padding:16px 10px}.trust-item strong{font-size:12px}.trust-item small{font-size:10px}section{padding:65px 0}.service-grid{grid-template-columns:1fr}.service-card{min-height:auto}.about-grid,.contact-grid{grid-template-columns:1fr}.about-visual img{height:360px}.experience-card{right:12px}.project-grid{grid-template-columns:1fr}.project-card,.project-card:first-child{grid-column:auto;min-height:300px}.process-grid{grid-template-columns:1fr 1fr;row-gap:28px}.cta-panel{padding:32px 24px;align-items:flex-start;flex-direction:column}.contact-form{padding:22px;grid-template-columns:1fr}.field.full,.form-note{grid-column:auto}.footer-grid{grid-template-columns:1fr 1fr;gap:28px}.footer-grid>div:first-child{grid-column:1/-1}}
     @media(max-width:430px){.container{width:min(100% - 28px,1160px)}h1{font-size:42px}.hero-buttons .btn{width:100%}.hero-stats{display:grid;grid-template-columns:1fr 1fr}.trust-item{gap:8px}.trust-icon{width:34px;height:34px}.process-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-grid>div:first-child{grid-column:auto}.cta-panel .btn{width:100%}}
+  
+    /* TECTON & CO. — Natural Earthy Design */
+    :root {
+      --ink: #29332c;
+      --muted: #6c7469;
+      --paper: #f5f2e9;
+      --line: #e5dfd2;
+      --white: #fffdf8;
+      --radius: 18px;
+      --shadow: 0 14px 36px rgba(48, 55, 42, 0.09);
+    }
+
+    body {
+      background: #fbfaf6;
+      color: var(--ink);
+    }
+
+    header {
+      background: rgba(251, 250, 246, 0.96);
+      border-bottom-color: #e5dfd2;
+    }
+
+    .services,
+    .contact {
+      background: var(--paper);
+    }
+
+    .service-card,
+    .contact-form {
+      background: var(--white);
+      border-color: var(--line);
+    }
+
+    .service-card:hover {
+      border-color: #b9c5a9;
+      box-shadow: var(--shadow);
+    }
+
+    .service-icon {
+      background: #e9eee3;
+      color: #526b48;
+    }
+
+    .text-link {
+      color: #526b48;
+    }
+
+    .about-visual img {
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .project-card {
+      border-radius: 18px;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      background: #fffdf8;
+      border-color: #ddd8cb;
+    }
+
+    .field input:focus,
+    .field select:focus,
+    .field textarea:focus {
+      border-color: #718568;
+    }
+
+    footer {
+      background: #263b30;
+      color: #f5f2e9;
+    }
+
+    footer p,
+    footer a {
+      color: #d0d9ce;
+    }
+
+    footer h4,
+    .footer-brand {
+      color: #fffdf8;
+    }
+
+    .socials a {
+      border-color: #687c6b;
+    }
+
+    .socials a:hover {
+      background: #526b48;
+      border-color: #526b48;
+    }
+
+    .hero {
+      background-image:
+        linear-gradient(
+          90deg,
+          rgba(35, 52, 42, 0.94),
+          rgba(35, 52, 42, 0.72) 48%,
+          rgba(35, 52, 42, 0.18)
+        ),
+        url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=85');
+    }
+
   </style>
 </head>
 <body>
