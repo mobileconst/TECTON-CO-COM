@@ -422,39 +422,93 @@ footer h4,
 
 
 
+
 <section id="construction-projects" style="padding:70px 20px;background:#f5f2e9;color:#29332c;">
   <div style="max-width:1100px;margin:auto;text-align:center;">
+
     <h2 style="font-size:32px;margin:0 0 14px;">Our Construction Projects</h2>
+
     <p style="max-width:750px;margin:0 auto 28px;line-height:1.7;color:#6c7469;">
       Explore TECTON &amp; CO. LIMITED's construction activities, project progress,
-      engineering work and completed developments. Watch our latest construction videos
-      directly from our YouTube channel.
+      engineering work and completed developments.
     </p>
 
-    <div style="max-width:1100px;margin:30px auto;padding:20px;">
-      <h3 style="margin:0 0 12px;font-size:24px;color:#263b30;text-align:center;">
-        TECTON &amp; CO. LIMITED | Construction Projects
-      </h3>
-      <p style="text-align:center;color:#6c7469;line-height:1.7;margin-bottom:24px;">
-        Explore our construction projects, site operations and engineering workmanship.
-      </p>
-      <div style="position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;">
-        <iframe
-          src="https://www.youtube.com/embed/videoseries?list=PLOszCXLVCHXQ"
-          title="TECTON &amp; CO. LIMITED Construction Projects"
-          style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen>
-        </iframe>
+    <h3 style="margin:0 0 12px;font-size:24px;color:#263b30;">
+      TECTON &amp; CO. LIMITED | Construction Projects
+    </h3>
+
+    <p style="color:#6c7469;line-height:1.7;margin-bottom:28px;">
+      Explore our construction projects, site operations and engineering workmanship.
+    </p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;text-align:left;">
+
+      <div>
+        <h3 style="font-size:18px;margin:0 0 10px;">Construction Documentary 2026</h3>
+        <div class="tecton-video" data-video="3Q4DJnTzGYo"
+             style="position:relative;width:100%;aspect-ratio:16/9;background:#17231c;border-radius:12px;overflow:hidden;cursor:pointer;">
+          <img src="https://img.youtube.com/vi/3Q4DJnTzGYo/hqdefault.jpg"
+               alt="Construction Documentary 2026"
+               style="width:100%;height:100%;object-fit:cover;">
+          <button type="button" aria-label="Play video"
+                  style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border:0;border-radius:50%;background:rgba(0,0,0,.65);color:white;font-size:30px;cursor:pointer;">▶</button>
+        </div>
       </div>
-      <p style="text-align:center;margin-top:18px;">
-        <a href="https://www.youtube.com/playlist?list=PLOszCXLVCHXQ"
-           target="_blank" rel="noopener"
-           style="color:#263b30;font-weight:600;text-decoration:underline;">
-          Watch all our construction videos on YouTube
-        </a>
-      </p>
+
+      <div>
+        <h3 style="font-size:18px;margin:0 0 10px;">Moving Materials from Quarry to Site</h3>
+        <div class="tecton-video" data-video="8z7hkfpWQzM"
+             style="position:relative;width:100%;aspect-ratio:16/9;background:#17231c;border-radius:12px;overflow:hidden;cursor:pointer;">
+          <img src="https://img.youtube.com/vi/8z7hkfpWQzM/hqdefault.jpg"
+               alt="Moving Materials from Quarry to Site"
+               style="width:100%;height:100%;object-fit:cover;">
+          <button type="button" aria-label="Play video"
+                  style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border:0;border-radius:50%;background:rgba(0,0,0,.65);color:white;font-size:30px;cursor:pointer;">▶</button>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="font-size:18px;margin:0 0 10px;">Construction Project 03</h3>
+        <div class="tecton-video" data-video="y6Qgp1rduZg"
+             style="position:relative;width:100%;aspect-ratio:16/9;background:#17231c;border-radius:12px;overflow:hidden;cursor:pointer;">
+          <img src="https://img.youtube.com/vi/y6Qgp1rduZg/hqdefault.jpg"
+               alt="Construction Project 03"
+               style="width:100%;height:100%;object-fit:cover;">
+          <button type="button" aria-label="Play video"
+                  style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border:0;border-radius:50%;background:rgba(0,0,0,.65);color:white;font-size:30px;cursor:pointer;">▶</button>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="font-size:18px;margin:0 0 10px;">Construction Project 04</h3>
+        <div class="tecton-video" data-video="WQ-fvw1xEDI"
+             style="position:relative;width:100%;aspect-ratio:16/9;background:#17231c;border-radius:12px;overflow:hidden;cursor:pointer;">
+          <img src="https://img.youtube.com/vi/WQ-fvw1xEDI/hqdefault.jpg"
+               alt="Construction Project 04"
+               style="width:100%;height:100%;object-fit:cover;">
+          <button type="button" aria-label="Play video"
+                  style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:64px;height:64px;border:0;border-radius:50%;background:rgba(0,0,0,.65);color:white;font-size:30px;cursor:pointer;">▶</button>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
+<script>
+document.querySelectorAll('#construction-projects .tecton-video').forEach(function(player) {
+  player.addEventListener('click', function() {
+    var videoId = player.getAttribute('data-video');
+    var frame = document.createElement('iframe');
+
+    frame.src = 'https://www.youtube-nocookie.com/embed/' + videoId + '?autoplay=1';
+    frame.title = 'TECTON & CO. LIMITED Construction Project';
+    frame.style.cssText = 'position:absolute;inset:0;width:100%;height:100%;border:0;';
+    frame.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    frame.allowFullscreen = true;
+
+    player.replaceChildren(frame);
+    player.style.cursor = 'default';
+  });
+});
+</script>
